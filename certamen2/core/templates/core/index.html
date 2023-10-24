@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+{% for comunicado in comunicados %}
+
+    <p> {{comunicado.titulo}}  </p>
+    <p> {{comunicado.detalle_corto}}  </p>
+
+{% endfor %}
+    
+{% endblock %}
